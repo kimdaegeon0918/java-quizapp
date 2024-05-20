@@ -87,7 +87,7 @@ public class AddQuestion {
 
         while (true) {
             try {
-                System.out.print("정답을 입력하세요. 순서는 상관 없습니다. : ");
+                System.out.print("정답을 입력하세요. 콤마로 구분. 순서는 상관 없습니다. : ");
                 String correctAnswers = scanner.nextLine();
                 List<String> numberList = new ArrayList<>();
                 for (String number : correctAnswers.split(",")) {

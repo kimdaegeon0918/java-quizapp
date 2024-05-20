@@ -25,7 +25,7 @@ public class MultiSelectQuestion extends ChoiceQuestion {
     @Override
     public void displayQuestion() {
         super.displayQuestion();
-        System.out.println("답을 모두 고르세요. 순서는 상관 없습니다.");
+        System.out.println("답을 모두 고르세요. 콤마로 구분. 순서는 상관 없습니다.");
     }
 
 }

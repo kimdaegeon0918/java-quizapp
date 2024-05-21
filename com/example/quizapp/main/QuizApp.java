@@ -25,28 +25,26 @@ public class QuizApp {
         InputUtil input = new InputUtil();
         Quiz quiz = new Quiz();
 
-        boolean exit = false;
-
-        while (!exit) {
+        while (true){
             printMenu();
 
-            switch (input.getChoice()) {
-                case 1:
+            switch(input.get()){
+                case "1":
                     AddQuestion addquestion = new AddQuestion(questions);
                     questions = addquestion.addQuestion();
                     break;
-                case 2:
+                case "2":
                     quiz.start(questions);
                     break;
-                case 3:
-                    exit = true;
+                case "3":
                     System.out.println("이용해주셔서 감사합니다!");
-                    break;
+                    input.closeScanner();
+                    return;
                 default:
-                    System.out.println("1,2,3 중에 선택해주세요.");
+                    System.out.println("1,2,3 중에 입력해주세요.");
+                }
             }
         }
-    }
 
     private static void printMenu() {
         System.out.println("=== 메 뉴 ===");

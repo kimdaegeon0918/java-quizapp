@@ -1,23 +1,22 @@
 package com.example.quizapp.quiz.run;
 
 import com.example.quizapp.question.Question;
+import com.example.quizapp.util.InputUtil;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class Quiz {
-    public Quiz(){
-    }
+    InputUtil input = new InputUtil();
+    public Quiz(){}
 
     public void start(List<Question> questions){
         int score = 0;
-        Scanner scanner = new Scanner(System.in);
 
         for (Question question : questions) {
             System.out.println("-".repeat(130));
             question.displayQuestion();
             System.out.print("답을 입력해주세요 : ");
-            String answer = scanner.nextLine();
+            String answer = input.get();
             if (question.checkAnswer(answer)) {
                 score++;
                 System.out.println("정답입니다!");

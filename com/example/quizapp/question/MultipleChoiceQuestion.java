@@ -7,6 +7,7 @@ public class MultipleChoiceQuestion extends ChoiceQuestion {
         super(questionText, correctAnswers, options);
     }
 
+    // 문제 출제
     @Override
     public void displayQuestion() {
         super.displayQuestion();

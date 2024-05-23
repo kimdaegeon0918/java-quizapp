@@ -12,6 +12,7 @@ public class Quiz {
     public void start(List<Question> questions){
         int score = 0;
 
+        // 문제 순차적으로 출제
         for (Question question : questions) {
             System.out.println("-".repeat(130));
             question.displayQuestion();

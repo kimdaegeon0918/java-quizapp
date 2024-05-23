@@ -9,10 +9,12 @@ public class InputUtil {
         this.scanner = new Scanner(System.in);
     }
 
+    // 사용자 입력 값 반환
     public String get(){
         return scanner.nextLine();
     }
 
+    // 자원해제
     public void closeScanner(){
         scanner.close();
     }

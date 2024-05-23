@@ -12,6 +12,7 @@ public class MultiSelectQuestion extends ChoiceQuestion {
         this.correctAnswers = correctAnswers;
     }
 
+    // 번호 순서대로 정렬해서 정답 확인
     @Override
     public boolean checkAnswer(String answer) {
         List<String> numberList = new ArrayList<>();
@@ -22,6 +23,7 @@ public class MultiSelectQuestion extends ChoiceQuestion {
         return correctAnswers.equals(String.join(",", numberList));
     }
 
+    // 문제 출제
     @Override
     public void displayQuestion() {
         super.displayQuestion();

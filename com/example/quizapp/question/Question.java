@@ -9,14 +9,17 @@ public abstract class Question {
         this.correctAnswer = correctAnswer;
     }
 
+    // 문제 반환
     public String getQuestionText(){
         return questionText;
     }
 
+    // 정답 체크
     public boolean checkAnswer(String answer){
         return correctAnswer.equalsIgnoreCase(answer);
     }
 
+    // 문제 출제
     public abstract void displayQuestion();
 
 }

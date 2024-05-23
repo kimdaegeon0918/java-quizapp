@@ -10,6 +10,7 @@ public abstract class ChoiceQuestion extends Question {
         this.options = options;
     }
 
+    // 문제 출제
     @Override
     public void displayQuestion() {
         System.out.println(getQuestionText());

@@ -6,10 +6,10 @@ public class QuestionTimer implements Runnable {
     private boolean timeOut = false;
     private final QuizTimer quizTimer;
 
-    public QuestionTimer(int questionTimeLimit, QuizTimer totalTimeTimer, int penaltyTime) {
-        this.QUESTION_TIME_LIMIT = questionTimeLimit;
-        this.quizTimer = totalTimeTimer;
-        this.PENALTY_TIME = penaltyTime;
+    public QuestionTimer(int QUESTION_TIME_LIMIT, QuizTimer quizTimer, int PENALTY_TIME) {
+        this.QUESTION_TIME_LIMIT = QUESTION_TIME_LIMIT;
+        this.quizTimer = quizTimer;
+        this.PENALTY_TIME = PENALTY_TIME;
     }
 
     // 타이머 작동

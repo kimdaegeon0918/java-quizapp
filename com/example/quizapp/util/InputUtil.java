@@ -11,7 +11,7 @@ public class InputUtil {
 
     // 사용자 입력 값 반환
     public String get(){
-        return scanner.nextLine();
+        return scanner.nextLine(); // 입력이 중단되면 null 반환
     }
 
     // 자원해제

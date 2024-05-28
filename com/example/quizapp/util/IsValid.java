@@ -29,8 +29,8 @@ public class IsValid {
 
     // OX 문제 정답 유효성 검사
     public boolean isValidTFAnswer(String answer){
-        final String answer1 = "O";
-        final String answer2 = "X";
-        return (answer.equalsIgnoreCase(answer1) || answer.equalsIgnoreCase(answer2));
+        final String CORRECT = "O";
+        final String INCORRECT = "X";
+        return (answer.equalsIgnoreCase(CORRECT) || answer.equalsIgnoreCase(INCORRECT));
     }
 }

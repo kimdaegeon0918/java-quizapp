@@ -7,7 +7,7 @@ public abstract class ChoiceQuestion extends Question {
 
     public ChoiceQuestion(String questionText, String correctAnswer, List<String> options) {
         super(questionText, correctAnswer);
-        this.options = options;
+        this.options = List.copyOf(options);
     }
 
     // 문제 출제

@@ -8,7 +8,5 @@
   - 문제를 맞추면 시간 추가, 오답을 제출하거나 시간을 초과하면 시간 차감이 됩니다.
   - 퀴즈 제한시간이 지나면 남은 문제들은 오답이 됩니다.
 
-[![실행 화면]](https://youtu.be/KAlUHaJ3pRo)
-
-<iframe width="560" height="315" src="https://youtu.be/KAlUHaJ3pRo" frameborder="0" allowfullscreen></iframe>
+<img src="https://github.com/kimdaegeon0918/java-quizapp/assets/105616992/99b61cf0-eee8-4634-bb43-b307f9a82cbe" width="600" height="400">
 

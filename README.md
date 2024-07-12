@@ -9,7 +9,7 @@
   - 퀴즈 제한시간이 지나면 남은 문제들은 오답이 됩니다.
 
 ### 실행 영상
-- 추가예정
+- [![Video Label](http://img.youtube.com/vi/KAlUHaJ3pRo/0.jpg)](https://youtu.be/KAlUHaJ3pRo)
 
 ### 패키지 / 클래스 / 메서드 설명
 
